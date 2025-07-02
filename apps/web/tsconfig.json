@@ -1,0 +1,7 @@
+{
+    "extends": "@new-edu/typescript-config/tsconfig.web.json",
+    "include": ["src"],
+    "compilerOptions": {
+        "baseUrl": "."
+    }
+}

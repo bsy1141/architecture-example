@@ -1,0 +1,4 @@
+{
+  "extends": "@new-edu/typescript-config/tsconfig.server.json",
+  
+} 
