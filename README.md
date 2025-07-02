@@ -1,6 +1,6 @@
-# New Edu Example
+# architecutre Example
 
-새로운 교육 서비스 프로젝트입니다.
+새로운 프로젝트 구조 예시입니다.
 
 ## 기술 스택
 
