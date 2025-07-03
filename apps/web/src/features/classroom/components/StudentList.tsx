@@ -1,6 +1,6 @@
 import React from 'react';
 import { Student } from '../query-hooks/useClassroom/api';
-import { formatDate } from '../../shared/libs/date';
+import dayjs from 'dayjs';
 
 interface StudentListProps {
     students: Student[];
@@ -46,7 +46,7 @@ export const StudentList: React.FC<StudentListProps> = ({
                                 {student.email}
                             </p>
                             <p className="student-item__joined">
-                                {formatDate(student.joinedAt, 'short')} 참여
+                                {`${dayjs(student.joinedAt).format('YYYY-MM-DD')} 참여`}
                             </p>
                         </div>
 

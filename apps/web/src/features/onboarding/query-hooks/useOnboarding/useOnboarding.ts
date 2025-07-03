@@ -1,9 +1,5 @@
 import { useState, useEffect, useCallback } from 'react';
-import {
-    onboardingApi,
-    OnboardingData,
-    SaveOnboardingRequest,
-} from './useOnboarding/onboarding.api';
+import { onboardingApi, OnboardingData, SaveOnboardingRequest } from './api';
 
 export const useOnboarding = () => {
     const [onboardingData, setOnboardingData] = useState<OnboardingData | null>(

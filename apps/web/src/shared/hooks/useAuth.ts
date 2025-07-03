@@ -35,7 +35,13 @@ export const useAuth = () => {
                 setUser(response.user);
                 return { success: true, user: response.user };
             } catch (error) {
-                return { success: false, error: error.message };
+                return {
+                    success: false,
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : 'Unknown error',
+                };
             }
         },
         [setUser],
@@ -52,7 +58,13 @@ export const useAuth = () => {
                 setUser(response.user);
                 return { success: true, user: response.user };
             } catch (error) {
-                return { success: false, error: error.message };
+                return {
+                    success: false,
+                    error:
+                        error instanceof Error
+                            ? error.message
+                            : 'Unknown error',
+                };
             }
         },
         [setUser],

@@ -1,8 +1,8 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import App from './App';
-import Step1 from './onboarding/routes/Step1';
-import Step2 from './onboarding/routes/Step2';
-import Classroom from './classroom';
+import Step1 from '@/features/onboarding/routes/Step1';
+import Step2 from '@/features/onboarding/routes/Step2';
+import Classroom from '@/features/classroom';
 
 export const router = createBrowserRouter([
     {

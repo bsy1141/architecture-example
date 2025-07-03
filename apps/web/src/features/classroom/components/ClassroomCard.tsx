@@ -1,6 +1,6 @@
 import React from 'react';
 import { Classroom } from '../query-hooks/useClassroom/api';
-import { formatDate } from '../../shared/libs/date';
+import dayjs from 'dayjs';
 
 interface ClassroomCardProps {
     classroom: Classroom;
@@ -12,7 +12,6 @@ interface ClassroomCardProps {
 
 export const ClassroomCard: React.FC<ClassroomCardProps> = ({
     classroom,
-    onJoin,
     onLeave,
     onDelete,
     isTeacher = false,
@@ -23,7 +22,7 @@ export const ClassroomCard: React.FC<ClassroomCardProps> = ({
                 <h3 className="classroom-card__title">{classroom.name}</h3>
                 <div className="classroom-card__meta">
                     <span className="classroom-card__date">
-                        {formatDate(classroom.createdAt, 'short')}
+                        {dayjs(classroom.createdAt).format('YYYY-MM-DD')}
                     </span>
                     <span className="classroom-card__students">
                         {classroom.students.length}명 참여
