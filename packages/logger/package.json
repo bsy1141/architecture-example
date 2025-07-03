@@ -1,0 +1,37 @@
+{
+    "name": "@architecture-example/logger",
+    "version": "1.0.0",
+    "description": "Logging utilities for architecture example",
+    "main": "dist/index.js",
+    "types": "dist/index.d.ts",
+    "scripts": {
+        "build": "tsc",
+        "dev": "tsc --watch",
+        "test": "jest",
+        "lint": "eslint src/**/*.ts",
+        "clean": "rm -rf dist"
+    },
+    "keywords": [
+        "logger",
+        "typescript",
+        "logging",
+        "winston"
+    ],
+    "author": "Architecture Example Team",
+    "license": "MIT",
+    "devDependencies": {
+        "@types/node": "^20.0.0",
+        "@types/jest": "^29.0.0",
+        "jest": "^29.0.0",
+        "typescript": "^5.0.0",
+        "eslint": "^8.0.0"
+    },
+    "dependencies": {
+        "winston": "^3.10.0",
+        "winston-daily-rotate-file": "^4.7.1",
+        "chalk": "^5.0.0"
+    },
+    "files": [
+        "dist"
+    ]
+}
